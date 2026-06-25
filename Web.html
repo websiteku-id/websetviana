@@ -1,0 +1,348 @@
+<!DOCTYPE html><html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kisah Kita ❤️</title><style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#fff8f5;
+color:#333;
+overflow-x:hidden;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:80px;
+padding:0 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(255,255,255,.85);
+backdrop-filter:blur(15px);
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+z-index:999;
+}
+
+.logo{
+font-size:34px;
+font-weight:700;
+background:linear-gradient(90deg,#ff4f9a,#a855f7,#60a5fa);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+nav a{
+text-decoration:none;
+margin-left:25px;
+color:#555;
+font-weight:600;
+}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:100px 80px 0;
+background:linear-gradient(135deg,#ff4f9a,#a855f7,#60a5fa);
+color:white;
+}
+
+.hero-text{
+max-width:650px;
+}
+
+.hero-text h1{
+font-size:90px;
+line-height:1;
+margin-bottom:20px;
+}
+
+.hero-text p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+.btn{
+padding:15px 35px;
+border:none;
+border-radius:40px;
+font-size:17px;
+font-weight:bold;
+cursor:pointer;
+margin-right:10px;
+}
+
+.btn1{
+background:white;
+color:#ff4f9a;
+}
+
+.btn2{
+background:rgba(255,255,255,.2);
+color:white;
+border:2px solid white;
+}
+
+.hero img{
+width:420px;
+height:600px;
+object-fit:cover;
+border-radius:30px;
+box-shadow:0 20px 60px rgba(0,0,0,.25);
+}
+
+.section{
+padding:70px;
+}
+
+.section-title{
+font-size:38px;
+margin-bottom:25px;
+}
+
+.search{
+width:100%;
+padding:16px;
+border:none;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+margin-bottom:25px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:25px;
+overflow:hidden;
+cursor:pointer;
+transition:.4s;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.03);
+}
+
+.card img{
+width:100%;
+height:380px;
+object-fit:cover;
+}
+
+.card-info{
+padding:15px;
+}
+
+.card-info h3{
+margin-bottom:10px;
+}
+
+.tag{
+display:inline-block;
+padding:6px 12px;
+border-radius:20px;
+background:linear-gradient(90deg,#ff4f9a,#a855f7);
+color:white;
+font-size:12px;
+}
+
+.pink{
+background:#fff8fb;
+}
+
+.purple{
+background:#f7f0ff;
+}
+
+.peach{
+background:#fff4eb;
+}
+
+.love-box{
+background:white;
+padding:40px;
+border-radius:30px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+text-align:center;
+}
+
+.love-box h2{
+margin-bottom:15px;
+color:#ff4f9a;
+}
+
+.love-box p{
+font-size:18px;
+line-height:1.7;
+}
+
+footer{
+padding:30px;
+text-align:center;
+background:white;
+}
+
+.lightbox{
+display:none;
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.95);
+justify-content:center;
+align-items:center;
+z-index:9999;
+}
+
+.lightbox img{
+max-width:90%;
+max-height:90%;
+border-radius:20px;
+}
+
+@media(max-width:1200px){
+.gallery{
+grid-template-columns:repeat(3,1fr);
+}
+}
+
+@media(max-width:900px){
+.hero{
+flex-direction:column;
+text-align:center;
+height:auto;
+padding-bottom:50px;
+}
+
+.hero-text h1{
+font-size:55px;
+}
+
+.gallery{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:600px){
+.gallery{
+grid-template-columns:1fr;
+}
+
+header{
+padding:0 20px;
+}
+}
+</style></head><body><header>
+<div class="logo">❤️ Wanita Lucu </div><nav>
+<a href="#">VIANA CANTIK</a>
+
+</nav>
+</header><section class="hero"><div class="hero-text">
+<h1>PILIH FOTO FAVORIT  MU❤️</h1><p>
+Tempat untuk menyimpan semua Foto cantik dia ,
+dan momen terindah yang pernah kita lalui bersama wkkwkw
+</p><button class="btn btn1"
+onclick="document.getElementById('tayang').scrollIntoView({behavior:'smooth'})">
+Lihat Foto
+</button>
+
+</button>
+</div><img src="https://raw.githubusercontent.com/bangdonn01/Koosdesain/refs/heads/main/file_00000000201071f89ac568d1633c76ed.png" alt="Banner"></section><section class="section pink" id="tayang"><h2 class="section-title">📷 Sedang Dilihat</h2><input type="text" class="search" placeholder="Cari Favorit mu..."><div class="gallery"><div class="card" onclick="show(this)">
+<img src="https://raw.githubusercontent.com/bangdonn01/Desainkaosqr/refs/heads/main/IMG_20260625_204609.png">
+<div class="card-info">
+<h3>Viana lagi lucu ❤️</h3>
+<span class="tag">Pilih</span>
+</div>
+</div><div class="card" onclick="show(this)">
+<img src="https://raw.githubusercontent.com/bangdonn01/Desainkaosqr/refs/heads/main/IMG_20260625_204707.png">
+<div class="card-info">
+<h3>Viana lagi ketawa</h3>
+<span class="tag">Pilih</span>
+</div>
+</div><div class="card" onclick="show(this)">
+<img src="foto3.jpg">
+<div class="card-info">
+<h3>Kencan Pertama 💕</h3>
+<span class="tag">Pilih</span>
+</div>
+</div><div class="card" onclick="show(this)">
+<img src="foto4.jpg">
+<div class="card-info">
+<h3>Hari Bahagia ✨</h3>
+<span class="tag">Favorit</span>
+</div>
+</div></div></section><section class="section purple"><h2 class="section-title">💖 Pilihan Ku</h2><div class="gallery"><div class="card" onclick="show(this)">
+<img src="foto5.jpg">
+<div class="card-info">
+<h3>Momen Favorit 1</h3>
+</div>
+</div><div class="card" onclick="show(this)">
+<img src="foto6.jpg">
+<div class="card-info">
+<h3>Momen Favorit 2</h3>
+</div>
+</div><div class="card" onclick="show(this)">
+<img src="foto7.jpg">
+<div class="card-info">
+<h3>Momen Favorit 3</h3>
+</div>
+</div><div class="card" onclick="show(this)">
+<img src="foto8.jpg">
+<div class="card-info">
+<h3>Momen Favorit 4</h3>
+</div>
+</div></div></section><section class="section peach"><h2 class="section-title">🌹 Kenangan Terbaik</h2><div class="gallery"><div class="card" onclick="show(this)">
+<img src="foto9.jpg">
+<div class="card-info">
+<h3>Kenangan 1</h3>
+</div>
+</div><div class="card" onclick="show(this)">
+<img src="foto10.jpg">
+<div class="card-info">
+<h3>Kenangan 2</h3>
+</div>
+</div><div class="card" onclick="show(this)">
+<img src="foto11.jpg">
+<div class="card-info">
+<h3>Kenangan 3</h3>
+</div>
+</div><div class="card" onclick="show(this)">
+<img src="foto12.jpg">
+<div class="card-info">
+<h3>Kenangan 4</h3>
+</div>
+</div></div></section><section class="section"><div class="love-box">
+<h2>💌 Surat Cinta</h2><p>
+Terima kasih telah menjadi bagian dari setiap cerita,
+tawa, dan kenangan indah yang tersimpan di halaman ini.
+Semoga semua momen yang kita lalui selalu menjadi kisah
+yang ingin kita kenang selamanya. ❤️
+</p></div></section><div class="lightbox" id="lightbox">
+<img id="preview">
+</div><footer>
+💕 Dibuat Dengan Cinta Untuk Seseorang Yang Spesial 💕
+</footer><script>
+function show(card){
+let img=card.querySelector("img");
+document.getElementById("preview").src=img.src;
+document.getElementById("lightbox").style.display="flex";
+}
+
+document.getElementById("lightbox").onclick=function(){
+this.style.display="none";
+}
+</script></body>
+</html>
