@@ -260,7 +260,7 @@ Lihat Foto
 </button>
 
 </button>
-</div><img src="https://raw.githubusercontent.com/bangdonn01/Koosdesain/refs/heads/main/file_00000000201071f89ac568d1633c76ed.png" alt="Banner"></section><section class="section pink" id="tayang"><h2 class="section-title">📷 Sedang Dilihat</h2><input type="text" class="search" placeholder="Cari Favorit mu..."><div class="gallery"><div class="card" onclick="show(this)">
+</div><img src="https://raw.githubusercontent.com/bangdonn01/Koosdesain/refs/heads/main/file_00000000201071f89ac568d1633c76ed.png" alt="Banner"></section><section class="section pink" id="tayang"><h2 class="section-title">📷 Sedang Dilihat</h2><input type="text" class="search" placeholder="Cari Favoritmu..."><div class="gallery"><div class="card" onclick="show(this)">
 <img src="https://raw.githubusercontent.com/bangdonn01/Desainkaosqr/refs/heads/main/IMG_20260625_204609.png">
 <div class="card-info">
 <h3>Viana lagi lucu ❤️</h3>
@@ -273,16 +273,28 @@ Lihat Foto
 <span class="tag">Pilih</span>
 </div>
 </div><div class="card" onclick="show(this)">
-<img src="foto3.jpg">
+<img src="https://raw.githubusercontent.com/bangdonn01/Desainkaosqr/refs/heads/main/foto3.png">
 <div class="card-info">
-<h3>Kencan Pertama 💕</h3>
+<h3>Viana Mau bobo</h3>
 <span class="tag">Pilih</span>
 </div>
 </div><div class="card" onclick="show(this)">
-<img src="foto4.jpg">
+<img src="https://raw.githubusercontent.com/bangdonn01/Desainkaosqr/refs/heads/main/foto4.png">
 <div class="card-info">
-<h3>Hari Bahagia ✨</h3>
-<span class="tag">Favorit</span>
+<h3>Viana lagi Marah</h3>
+<span class="tag">Pilih</span>
+</div>
+</div><div class="card" onclick="show(this)">
+<img src="https://raw.githubusercontent.com/bangdonn01/Desainkaosqr/refs/heads/main/foto1.png">
+<div class="card-info">
+<h3>Viana minta maaf</h3>
+<span class="tag">Pilih</span>
+</div>
+</div><div class="card" onclick="show(this)">
+<img src="https://raw.githubusercontent.com/bangdonn01/Desainkaosqr/refs/heads/main/foto2.png">
+<div class="card-info">
+<h3>Viana lagi makan</h3>
+<span class="tag">Pilih</span>
 </div>
 </div></div></section><section class="section purple"><h2 class="section-title">💖 Pilihan Ku</h2><div class="gallery"><div class="card" onclick="show(this)">
 <img src="foto5.jpg">
@@ -344,5 +356,58 @@ document.getElementById("lightbox").style.display="flex";
 document.getElementById("lightbox").onclick=function(){
 this.style.display="none";
 }
-</script></body>
+</script>
+<script>
+function show(card){
+let img=card.querySelector("img");
+document.getElementById("preview").src=img.src;
+document.getElementById("lightbox").style.display="flex";
+}
+
+document.getElementById("lightbox").onclick=function(){
+this.style.display="none";
+}
+</script>
+
+<!-- Tempel kode musik di sini -->
+
+<audio id="bgMusic" loop>
+    <source src="https://raw.githubusercontent.com/bangdonn01/Musiku/main/Viana.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicBtn">🎵 Putar Musik</button>
+
+<style>
+#musicBtn{
+position:fixed;
+bottom:20px;
+right:20px;
+padding:12px 18px;
+border:none;
+border-radius:50px;
+background:linear-gradient(90deg,#ff4f9a,#a855f7);
+color:#fff;
+cursor:pointer;
+z-index:99999;
+}
+</style>
+
+<script>
+const music=document.getElementById("bgMusic");
+const btn=document.getElementById("musicBtn");
+
+btn.onclick=function(){
+if(music.paused){
+music.play();
+btn.innerHTML="⏸ Pause Musik";
+}else{
+music.pause();
+btn.innerHTML="🎵 Putar Musik";
+}
+}
+</script>
+
+</body>
 </html>
+</body>
+        </html>
