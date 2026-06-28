@@ -355,6 +355,28 @@ Lihat Foto
 <div class="card-info">
 <h3>You</h3>
 </div>
+    <video id="videoKenangan"
+       autoplay
+       muted
+       loop
+       playsinline
+       controls
+       width="100%"
+       style="max-width:800px;border-radius:20px;">
+    <source src="https://raw.githubusercontent.com/bangdonn01/Musiku/main/VID1.mp4" type="video/mp4">
+</video>
+
+<script>
+const video = document.getElementById("videoKenangan");
+
+video.addEventListener("click", function () {
+    if (video.muted) {
+        video.muted = false;
+    } else {
+        video.muted = true;
+    }
+});
+</script>
 </div></div></section><section class="section"><div class="love-box">
 <h2>💌 Surat Cinta</h2><p>
 Terima kasih telah menjadi bagian dari setiap cerita,
